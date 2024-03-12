@@ -1,6 +1,7 @@
 package ListConcept;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map.Entry;
 
 public class HashMapConcept {
@@ -57,6 +58,15 @@ public class HashMapConcept {
 			System.out.println(e.name+" "+e.age+" "+e.dept);
 		}
 		
+		 System.out.println("****************to check unique key-values storage*********************");
+		 
+		 HashMap<Integer,String> hsm = new HashMap<Integer,String>();
+		 hsm.put(1,"tom");
+		 hsm.put(2,"rom");
+		 hsm.put(3,"pom");
+		 hsm.put(2,"rom");
+		 
+		 System.out.println("print hst : "+hsm);	
 
 	}
 

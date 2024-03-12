@@ -9,7 +9,7 @@ public class HashTableConcept {
 	public static void main(String[] args) {
 		//it's similar to HashMap, but it's synchronized i.e. thread safe
 		//stores values on the basis of key-value pair
-		//it contain only unique value
+		//it contain only unique value with unique key
 		//no null key and null value
 		//key --> Object --HashCode --> value
 		//hashCode Number -- 32 bit integer  ---- Java Object Number :::: provided by JVM
@@ -27,11 +27,11 @@ public class HashTableConcept {
 		 h2 =  (Hashtable) h1.clone();
 		 
 		 System.out.println("Contents from h1: "+h1);
-		 System.out.println("Contents from h1: "+h2);
+		 System.out.println("Contents from h2: "+h2);
 		 
 		 h1.clear();
 		 System.out.println("Contents from h1: "+h1);
-		 System.out.println("Contents from h1: "+h2);
+		 System.out.println("Contents from h2: "+h2);
 		 
 		 //contains value method
 		 Hashtable<String, String> st = new Hashtable<String, String>();
@@ -74,7 +74,17 @@ public class HashTableConcept {
 			 //get the HashCode of Hashtable object
 			 System.out.println("Hash Code value of st1 :"+ st1.hashCode());
 		 
-
+			 System.out.println("****************to check unique values storage*********************");
+			 
+			 Hashtable<Integer,String> hst = new Hashtable<Integer,String>();
+			 hst.put(1,"tom");
+			 hst.put(2,"rom");
+			 hst.put(3,"pom");
+			 hst.put(4,"rom");
+			 
+			 System.out.println("print hst : "+hst);			 
+			 
+			 
 	}
 
 }
