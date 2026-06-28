@@ -9,7 +9,7 @@ public class HashTableConcept {
 	public static void main(String[] args) {
 		//it's similar to HashMap, but it's synchronized i.e. thread safe
 		//stores values on the basis of key-value pair
-		//it contain only unique value with unique key
+		//it contain only unique key
 		//no null key and null value
 		//key --> Object --HashCode --> value
 		//hashCode Number -- 32 bit integer  ---- Java Object Number :::: provided by JVM
